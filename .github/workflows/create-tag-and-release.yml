@@ -60,8 +60,6 @@ jobs:
 
           # Escape % for GitHub output
           CHANGELOG="${CHANGELOG//'%'/'%25'}"
-          CHANGELOG="${CHANGELOG//$'\n'/'%0A'}"
-          CHANGELOG="${CHANGELOG//$'\r'/'%0D'}"
 
           echo "changelog=$CHANGELOG" >> $GITHUB_OUTPUT
 
